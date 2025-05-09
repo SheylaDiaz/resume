@@ -1,4 +1,4 @@
-HEAD
+
 
 .container-page {
     font-family: Arial, sans-serif;
@@ -155,4 +155,20 @@ h2 {
             margin: 5px 5px 5px 0;
             border-radius: 4px;
         }
+main-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+ @media (min-width: 768px ) {
+    .main-layout {
+        flex-direction: row;
+    }
+    .content {
+        flex: 3;
+    }
+    .sidebar {
+        flex: 1;
+    }
+}
